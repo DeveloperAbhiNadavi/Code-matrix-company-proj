@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="codematrix.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
+   integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="container">
+		<div class="header">
+			<h2 id="info">Personal details</h2>
+			<p id="datainfo">Update Your inforamtion and find out how its used.</p>
+			<p id="photoname">Upload Cover Photo</p>  
+          <div class="pic"></div>
+		</div>
+        <div class="sidebar">
+          <h4 id="photo-text">Upload Photo</h4>
+          <button class="btn"><i class="bi bi-facebook"></i></button>
+          <button class="btn"><i class="bi bi-twitter"></i></button>
+          <button class="btn"><i class="bi bi-instagram"></i></button>
+
+        </div>
+      <form action="#" class="form">
+        <div class="column">
+            <div class="input-box">
+              <label>First Name</label>
+              <input type="text" placeholder="John" required />
+            </div>
+            <div class="input-box">
+              <label>Last Name</label>
+              <input type="text" placeholder="David" required />
+            </div>
+          </div>
+          <div class="input-box">
+          <label>Bio Description</label>
+          <input type="text" placeholder="Message" required />
+        </div>
+        <div class="column">
+            <div class="input-box">
+              <label>Email Address</label>
+              <input type="email" placeholder="username@email.com" required />
+              <p class="textbelow">Will use this email id to send your confirmation</p>
+            </div>
+            <div class="input-box">
+              <label>Phone number</label>
+              <input type="number" placeholder="+91 9538652030" required />
+              <p class="textbelow">Will use this number if they need to contact you</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Address 1</label>
+              <input type="text"  required />
+            </div>
+            <div class="input-box">
+              <label>Address 2</label>
+              <input type="text"  required />
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>City</label>
+              <input type="text"  required />
+            </div>
+            <div class="input-box">
+              <label>State</label>
+              <input type="text"  required />
+            </div>
+            <div class="input-box">
+                <label>Country</label>
+                <input type="text"  required />
+              </div>
+              <div class="input-box">
+                <label>Zipcode</label>
+                <input type="text"  required />
+              </div>
+          </div>
+          <div class="confirm-btn">
+      <button type="reset" id="cancel-btn">Cancel</button>
+      <button type="submit" id="conf-btn">Confirm</button>
+    </div>
+    </form>
+  </section>
+ </body>
+</html>
