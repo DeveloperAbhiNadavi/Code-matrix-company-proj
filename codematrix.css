@@ -1,0 +1,210 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  width: 100%;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+form {
+  position: relative;
+  height: 100%;
+  width: 77%;
+  padding: 10px;
+  display: inline;
+  align-items: end;
+  justify-content: end;
+  float: right;
+}
+.container .sidebar{
+  height: 300px;
+  width: 200px;
+  float: left;
+  margin-top: 70px;
+  margin-left: 30px;
+  display: inline;
+  align-items: end;
+  justify-content: end;
+
+}
+.container .header{
+  height: 140px;
+  width: 100%;
+  background-color: #9932CC;
+  color: #fff;
+  border-radius: 10px;
+ 
+}
+#info{
+   position: relative;
+   left: 25px;
+   top: 10px;
+}
+#datainfo{
+   position: relative;
+   left: 25px;
+   top: 15px;
+}
+.header .pic{
+
+  position: absolute;
+    bottom:65%;
+    left: 08%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    border: 5px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn{
+  height: 15%;
+  width: 120%;
+  margin-top: 30px;
+  outline: none;
+  position: relative;
+  border-radius: 10px;
+  background: #ffffff;
+  color: black;
+  border: 2px solid #d1cccc;
+  padding-left: 15px;
+  font-size: 18px;
+  border-bottom-width: 3px;
+  transition: all 0 3s ease;
+  text-align: start;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+}
+.sidebar #photo-text{
+ position: relative;
+ left: 26px;
+
+}
+.container .form {
+  margin-top: 0px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #282828;
+}
+.form :where(.input-box input) {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: black;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px #d1cccc;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.form .column ,.column2 {
+  display: flex;
+  column-gap: 15px;
+}
+.textbelow{
+  padding-top: 5px;
+  color: #595757;
+}
+.container .confirm-btn{
+  margin-left: 70%;
+  padding-top: 30px;
+}
+.confirm-btn #cancel-btn{
+  margin-right: 10px;
+  border-radius: 100px;
+  width: 95px;
+  height: 35px;
+}
+.confirm-btn #conf-btn{
+  margin-right: 50px;
+  border-radius: 100px;
+  width: 95px;
+  height: 35px;
+  background-color: #9932CC;
+  color: #fff;
+  border: 1px solid #9932CC;
+}
+#photoname{
+   font-size: 15px;
+   position: relative;
+   left: 88%;
+   top: 50%;
+}
+@media screen and (max-width: 900px) {
+  body{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .column2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .input-box {
+    width: 100%;
+  }
+ .container .confirm-btn{
+    display: inline-flex;
+    margin-left: 40%;
+}
+.header .pic{
+  display: inline-flex;
+  position:relative;
+  left: 43%;
+  top:55%;
+}
+form{
+  position: relative;
+  width: 100%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+#photo-text{
+  width: 100%;
+  margin-left: 19%;
+  border-bottom: 20%;
+}
+.btn{
+  height: 15%;
+  width: 150%;
+ right: 13%;
+}
+#datainfo{
+  font-size: 0.8rem;
+}
+#photoname{
+  position: sticky;
+ margin-left: 60%;
+ margin-bottom: 5px;
+}
+}
